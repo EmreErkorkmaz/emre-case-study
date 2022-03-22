@@ -1,5 +1,5 @@
 const Config = {
-  baseUrl: "https://emre-study-case.herokuapp.com/api"
+  baseUrl: "http://localhost:3004"
 }
 
 export default Config;

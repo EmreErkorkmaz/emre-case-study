@@ -29,6 +29,19 @@ const useStyles = createUseStyles({
         paddingLeft: 72
       }
     }
+  },
+  "@media screen and (max-width: 400px)": {
+    topNav: {
+      padding: 0,
+      justifyContent: "center",
+      "& > div:last-child, & > div:first-child": {
+        display: "none"
+      },
+      "& > img": {
+        paddingLeft: 0,
+        height: "100%"
+      }
+    }
   }
 })
 

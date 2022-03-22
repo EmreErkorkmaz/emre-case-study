@@ -2,14 +2,33 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Running Locally
+
+### Install JSON-server
+
+```bash
+npm install -g json-server
+```
+
+### Run Server
+
+```bash
+json-server --watch db.json --port 3004
+```
+
+### Start App
+
+```bash
+npm start
+```
+
 # About Project
 
 Core structures in this project...
 
 ### Language:
 
-- Typescript (Frontend)
-- Javascript (JSON-server)
+- Typescript
 
 ### State Management:
 
