@@ -34,7 +34,7 @@ function* getCompaniesAsync(action: Action): Generator<any, void, any> {
     const companies = yield call(getCompanies)
     yield put({ type: GET_COMPANIES_SUCCESS, payload: companies.data })
   } catch (error) {
-    throw new Error();
+    yield put(setLoading(false))
   }
 }
 

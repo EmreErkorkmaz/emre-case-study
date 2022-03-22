@@ -1,43 +1,62 @@
-# Getting Started with Create React App
+# Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# About Project
 
-In the project directory, you can run:
+Core structures in this project...
 
-### `yarn start`
+### Language:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Typescript (Frontend)
+- Javascript (JSON-server)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### State Management:
 
-### `yarn test`
+- Redux
+- Redux-Saga
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Styling:
 
-### `yarn build`
+- Metarial-UI
+- React-JSS
+- StyledComponents
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Folder Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### assets
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Logo and product image in this folder
 
-### `yarn eject`
+### components
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Layout folder has a tree structure which shows component placements and workflow
+- UI folder has reusable components. (FilterCard and Product Card)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### helpers
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- `config.ts`   ->  Config file for baseurl
+- `constant.ts` ->  Constant variables for styling
+- `theme.ts`    ->  Theme file for MUI components
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### hooks
+
+In this section we have custom hooks for keeping App and Filter component more lean.
+
+- `useInitialData` ->  Gets initial data when the app starts
+- `useFilter`      ->  This hook listens filter object in redux and sends a request every time filter gets updated
+
+### redux
+
+All redux related files are in this folder.
+
+- `actions.ts`      ->  Action creators for leaner and manageable structure
+- `actionTypes.ts`  ->  Action type constants for reducing typo mistakes
+- `middleware.ts`   ->  Middlewares in reducer for leaner and readable code
+- `reducer.ts`      ->  Reducer file
+- `sagas.ts`        ->  Middleware for handling async operations. Watcher and worker structure handled in here
+- `store.ts`        ->  Creating a store and applying middlewares for redux have done in this file
+- `types.ts`        ->  All types which related with redux
 
 ## Learn More
 

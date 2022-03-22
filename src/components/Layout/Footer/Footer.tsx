@@ -1,5 +1,4 @@
 import { Paper, Stack, Typography } from '@mui/material'
-import React from 'react'
 import { createUseStyles } from 'react-jss'
 import { colors } from '../../../helpers/constants'
 

@@ -1,5 +1,4 @@
 import { Grid, Typography } from '@mui/material'
-import React from 'react'
 import { colors } from '../../../../helpers/constants'
 import ProductList from './ProductList/ProductList'
 import Tabs from './Tabs/Tabs'
