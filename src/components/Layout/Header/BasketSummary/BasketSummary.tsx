@@ -34,7 +34,7 @@ const BasketSummary = () => {
   return (
     <div className={classes.basketSummary}>
       <FontAwesomeIcon icon={faShoppingBag} color={colors.secondaryColor} size="lg"/>
-      <Typography variant="body2" color={colors.secondaryColor}>{total}</Typography>
+      <Typography variant="body2" color={colors.secondaryColor}>₺{total}</Typography>
     </div>
   )
 }
