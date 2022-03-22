@@ -1,5 +1,5 @@
 const Config = {
-  baseUrl: "http://localhost:3004"
+  baseUrl: `${window.location.protocol + '//' + window.location.host}/api`
 }
 
 export default Config;
